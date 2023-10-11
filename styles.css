@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap');
+
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      /* font-family: 'Courier New', Courier, monospace; */
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+}
+
+main{
+       display: grid;
+       
+}
+
+
+.header{
+    position: sticky;
+    top:0px;
+    z-index: 3;
+    min-height: auto;
+    background-color:rgb(255, 255, 255);
+    height:73px;
+    box-shadow:0px 0px 3px rgba(211, 211, 211, 0.732);
+ 
+
+     .headercontainer{
+               
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:.5rem 4rem;
+
+            
+
+                
+                .logo img,
+                .dropdown img{
+                        width:60px;
+                        border-radius:50px;
+                        box-shadow:0px 0px 8px lightgrey;
+                }
+
+
+                
+                .desktopview{
+                    display:flex;
+                    gap:1rem;
+                    font-size:18px;
+                    font-weight:bold;
+                    
+                }
+        
+                .desktopview a{
+                    text-decoration:none;
+                    color:rgb(59, 57, 57);
+                }
+        
+                .dropdown{
+                    display:none;
+        }
+
+     }
+    
+   
+}
+
+.mobile{
+     display: none;
+     text-align: center;
+    
+    
+    
+}
+
+.mobile a{
+      text-decoration:none;
+      font-size:18px;
+      color:rgb(59, 57, 57);
+      margin-top:1rem;
+      font-weight:bold;
+}
+
+.mobile span{
+      font-size:25px;
+      font-weight: bold;
+      color:rgb(59, 57, 57);
+      text-align:center;
+      cursor:pointer;
+}
+
+
+.hero{
+      height:80vh;  
+      display:flex;
+     align-items:center;
+     justify-content: space-evenly; 
+     padding-top:.5rem;
+   
+
+    .col1 img{
+        
+         width:260px;
+         animation-name: moveImage;
+         animation-duration: 4s;
+         animation-iteration-count: 1;
+         transition:1s;
+    }
+
+    .col2{
+           display: grid;
+           row-gap:1rem;
+           
+       
+    }
+
+    .col2 h1{
+      font-size:35px;     
+      letter-spacing: 1px; 
+    }
+
+    .col2 a{
+         text-decoration:none;
+         border :1px solid ;
+         padding:.5rem;
+         color:white;
+         font-size:17px;
+         text-align:center;
+         width:200px;
+         background-color: rgba(255, 68, 0, 0.791) ;
+         border-radius:5px;
+    }
+}
+
+.info{
+       height: 60vh;
+
+       .title{
+               text-align:center;
+               padding:1rem;
+               font-size:2rem;
+             
+       }
+
+       .cols{
+              display: flex;  
+              align-items: center;
+              justify-content: center;
+              gap:3.5rem;
+              margin-top:2rem;
+              
+              .col{
+                       display: grid;
+                       width:200px;
+                       height:288px;
+                       overflow: hidden;
+                       box-shadow: 1px 1px 1px rgba(211, 211, 211, 0.54);
+                       border-radius:5px;
+                       cursor:pointer;
+              }
+
+              .colrow1{
+                     width: 200px;
+                     height:150px;
+                    
+
+                    
+              }
+
+              .colrow1 img{
+                      width:100%;
+                      
+              }
+
+             
+              .colrow2{
+                     margin-top:3rem;
+                     display: grid;
+              }
+
+              .colrow2 span{
+                     font-weight:bold;
+                     font-size:19px;
+            }
+
+
+             .colrow2 p{
+                    font-weight:lighter;
+                    font-size:18px;
+             }
+
+       }
+
+
+}
+
+.about{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:5rem;
+        padding:1rem;
+        margin-top:2rem;
+
+        .img img{
+                width: 300px;
+                border-radius:5px;
+        }
+
+        .about_info{
+                 font-size:19px;
+                 line-height: 1.5;
+                 
+        }
+}
+
+.food_gallery{
+        height:100vh;
+        margin-top:5rem;
+
+        .title{
+              text-align:center;
+              padding:2rem;
+              font-size:1.7rem;
+        }
+       .meals{
+              display:flex;
+              justify-content:center;
+              gap:1rem;
+              
+
+              .meal{
+                     display: grid;
+                     gap:.5rem;
+                     margin-bottom:2rem;
+                     .img{
+                            height:200px;
+                            width:250px;
+                            overflow: hidden;
+                            border-radius: 10px;
+                     }
+
+                     .img img{
+                              width:100%;
+                              height:100%
+                     }
+
+                     .meal-name{
+                             font-weight:bold;
+                             font-size:18px;
+                     }
+
+              }
+       }
+      
+       
+}
+
+
+.footer{
+      
+       background-color: rgba(0, 0, 0, 0.908);       
+       .row1{
+              display:flex;
+              align-items: center;
+              justify-content: space-evenly;
+              gap:11rem;
+          
+
+              .col1{
+                      display: grid;
+                      font-size:19px;
+                      gap:1.5rem;
+                      color:white;
+                      padding:.5rem 0;
+
+                      .contacts{
+                             display: grid;
+                             gap:1rem;
+
+                             .contact{
+                                    display: flex;
+                                    gap:1rem;
+                             }
+                      }
+              }
+
+              .col2{
+                   
+                     .form{
+                            display: grid;
+                            gap:.5rem;
+                            margin-top:1.5rem;
+
+                            .inputgrp{
+                                 border: 1px solid white;
+                                 background-color: white;
+                                 padding: .4rem;
+                                 width:400px;
+                            }
+                            .inputgrp input{
+                                  border:none;
+                                  outline:none;
+                                 
+                            }
+
+                            .textarea textarea{
+                                   outline:none;
+                                   padding:.5rem;
+                                   width:400px;
+
+                            }
+
+                            .submit input{
+                                   padding: .5rem;
+                                
+                            }
+                     }
+              }
+       }
+
+       .row2{
+               color:white;
+               display:flex;
+               align-items:center;
+               justify-content: space-evenly;
+               gap:17rem;
+               padding:2.5rem;
+               background-color: rgba(0, 0, 0, 0.228);
+               font-size:18px;
+
+               .socials{
+                      display: flex;
+                      align-items:center;
+                      gap:1rem;
+               }
+
+               .socials a{
+                      color:white;
+               }
+       }
+}
+
+
+/* Menu css */
+.menu{
+        height:auto;
+
+       .row1{
+              margin-top:1rem;
+              padding:1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap:5rem;
+              background-color: rgba(255, 68, 0, 0.791);
+              
+
+              .col{
+                    display: grid;
+                    place-items: center;
+                    gap:.5rem;
+                    row-gap: .5rem;
+                    width: 150px;
+              
+                     .img{
+                            border:2px solid lightgrey;
+                            width:60px;
+                            height:60px;
+                            border-radius: 50px;
+                            display: grid;
+                            place-items: center;
+                            
+                     }
+              }
+
+              .col p{
+                   font-size: 18px;   
+                   color:white;
+
+              }
+
+       }
+
+       .row2{
+            margin-top: 1rem;  
+
+              .title{
+                      text-align:center;
+
+              }
+
+              .cols{
+                     margin-top:2.5rem;
+                     display:flex;
+                     align-items: center;
+                     justify-content:center;
+                     gap:5rem;
+
+                     .col{
+
+                            .row{
+                                    display:flex;
+                                    align-items:center;
+                                    gap: .5rem;
+                                    margin-bottom:2rem;
+
+
+
+                                    .meal_info{
+                                         display:grid;
+                                          gap: .3rem; 
+                                          
+                                    }
+
+                                    .actions button{
+                                            width:100px;
+                                            padding:.5rem;
+                                            background-color: rgba(255, 68, 0, 0.791);
+                                            border-radius:3px;
+                                            color:white;
+                                            border:none;
+                                    }
+
+                            }
+                     }
+              }
+       }
+}
+
+
+
+
+
+/* media query */
+@media only  screen and (max-width:600px){
+
+       .header{
+              
+              
+              .headercontainer{
+                     padding:.5rem 2rem;
+
+              .desktopview a{
+                     display: none;
+              } 
+
+              .dropdown{
+                     display:flex;
+              }
+
+
+              
+              }
+
+              .mobile{
+              display: flex;
+              flex-direction: column;
+              row-gap:3rem;       
+              box-shadow:0px 0px 4px skyblue;
+              width:100%;
+              padding:1rem 3rem;
+              background-color: rgba(213, 208, 208, 0.847);
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              transform: translateY(-700px);
+              transition: 1s;
+              }
+       
+
+
+
+
+       }
+
+       
+       .hero{
+              height:80vh;  
+              display:flex;
+              flex-wrap:wrap;
+              align-items:center;
+              justify-content: space-evenly; 
+              padding-top:.5rem;
+       
+       
+       .col1 img{
+              
+              width:260px;
+              animation-name: moveImage;
+              animation-duration: 4s;
+              animation-iteration-count: 1;
+              transition:1s;
+       }
+       
+       .col2{
+              display: grid;
+              row-gap:1rem;
+              place-items: center;
+              
+              
+       }
+       
+       .col2 h1{
+              font-size:35px;     
+              letter-spacing: 1px; 
+       }
+       
+       .col2 a{
+              text-decoration:none;
+              border :1px solid ;
+              padding:.5rem;
+              color:white;
+              font-size:17px;
+              text-align:center;
+              width:200px;
+              background-color: rgba(255, 68, 0, 0.791)
+       }
+       }
+
+       .info{
+              height: 100vh;
+              margin-top:2.5rem;
+       
+              .title{
+                      text-align:center;
+                      padding:1rem;
+                      font-size:2rem;
+                      
+              }
+       
+              .cols{
+                     display: flex;  
+                     flex-wrap: wrap;
+                     align-items: center;
+                     justify-content: center;
+                     gap:3.5rem;
+                     margin-top:2rem;
+                     
+                     .col{
+                              display: grid;
+                              width:200px;
+                              height:288px;
+                              overflow: hidden;
+                              box-shadow: 1px 1px 1px rgba(211, 211, 211, 0.54);
+                              border-radius:5px;
+                              cursor:pointer;
+                     }
+       
+                     .colrow1{
+                            width: 200px;
+                            height:150px;
+                           
+       
+                           
+                     }
+       
+                     .colrow1 img{
+                             width:100%;
+                             
+                     }
+       
+                    
+                     .colrow2{
+                            margin-top:3rem;
+                            display: grid;
+                     }
+       
+                     .colrow2 span{
+                            font-weight:bold;
+                            font-size:19px;
+                   }
+       
+       
+                    .colrow2 p{
+                           font-weight:lighter;
+                           font-size:18px;
+                    }
+       
+              }
+       
+       
+       }
+
+       .about{
+                     display:flex;
+                     flex-wrap:wrap;
+                     align-items:center;
+                     justify-content:center;
+                     gap:5rem;
+                     padding:1rem;
+                     margin-top:3rem;
+       
+                     .img img{
+                            width: 350px;
+                     }
+       
+                     .about_info{
+                            font-size:19px;
+                            line-height: 1.5;
+                            padding: 0 3rem;
+
+                            .title{
+                                   text-align:center;
+                            }
+                     }
+       }
+
+       .food_gallery{
+              height: 100vh;
+              margin-top:2rem;
+
+              .title{
+              text-align:center;
+              padding:2rem;
+              font-size:1.7rem;
+              }
+       .meals{
+              display:flex;
+              flex-wrap:wrap;
+              justify-content:center;
+              gap:1rem;
+
+              .meal{
+                     display: grid;
+                     gap:.5rem;
+                     margin-bottom:2rem;
+                     .img{
+                            height:200px;
+                            width:250px;
+                            overflow: hidden;
+                            border-radius: 10px;
+                     }
+
+                     .img img{
+                                   width:100%;
+                                   height:100%
+                     }
+
+                     .meal-name{
+                                   font-weight:bold;
+                                   font-size:18px;
+                     }
+
+              }
+       }
+       
+       
+       }
+
+       .footer{
+              
+              background-color: rgba(0, 0, 0, 0.908);       
+              .row1{
+                     display:flex;
+                     flex-wrap: wrap;
+                     align-items: center;
+                     justify-content: space-evenly;
+                     gap:1rem;
+                     padding-top:2rem;
+              
+
+                     .col1{
+                            display: grid;
+                            font-size:19px;
+                            gap:1.5rem;
+                            color:white;
+                            padding:.5rem 0;
+
+                            .contacts{
+                                   display: grid;
+                                   gap:1rem;
+
+                                   .contact{
+                                          display: flex;
+                                          gap:1rem;
+                                   }
+                            }
+                     }
+
+                     .col2{
+                     margin-right:10rem;
+                            .form{
+                                   display: grid;
+                                   gap:.5rem;
+                                   margin-top:1.5rem;
+
+                                   .inputgrp{
+                                   border: 1px solid white;
+                                   background-color: white;
+                                   padding: .4rem;
+                                   margin-left: 5rem;
+                                   }
+                                   .inputgrp input{
+                                   border:none;
+                                   
+                                   }
+
+                                   .textarea textarea{
+                                          outline:none;
+                                          padding:.5rem;
+                                          margin-left: 5rem;
+                                   }
+
+                                   .submit input{
+                                          padding: .5rem;
+                                          margin-left: 5rem;
+                                   }
+                            }
+                     }
+              }
+
+              .row2{
+                     color:white;
+                     display: block;
+                     margin-top: 2rem;
+                     background-color: rgba(0, 0, 0, 0.228);
+                     font-size:18px;
+                     padding-left:2rem;
+
+                     .socials{
+                            display: flex;
+                            align-items:center;
+                            gap:1rem;
+                     }
+
+                     .socials a{
+                            color:white;
+                     }
+              }
+       }
+
+
+  /* menu mobile css */
+
+  .menu{
+       height:auto;
+
+      .row1{
+             margin-top:1rem;
+             padding:1rem;
+             display: flex;
+             flex-wrap:wrap;
+             align-items: center;
+             justify-content: center;
+             gap:2rem;
+             background-color: rgba(255, 68, 0, 0.791);
+             
+
+             .col{
+                   display: grid;
+                   place-items: center;
+                   gap:.5rem;
+                   row-gap: .5rem;
+                   width: 150px;
+             
+                    .img{
+                           border:2px solid lightgrey;
+                           width:60px;
+                           height:60px;
+                           border-radius: 50px;
+                           display: grid;
+                           place-items: center;
+                           
+                    }
+             }
+
+             .col p{
+                  font-size: 18px;   
+                  color:white;
+
+             }
+
+      }
+
+      .row2{
+           margin-top: 1rem;  
+
+             .title{
+                     text-align:center;
+
+             }
+
+             .cols{
+                    margin-top:2.5rem;
+                    display:flex;
+                    align-items: center;
+                    justify-content:center;
+                    gap:5rem;
+
+                    .col{
+
+                           .row{
+                                   display:flex;
+                                   align-items:center;
+                                   gap: .5rem;
+                                   margin-bottom:2rem;
+
+
+
+                                   .meal_info{
+                                        display:grid;
+                                         gap: .3rem; 
+                                         
+                                   }
+
+                                   .actions button{
+                                           width:100px;
+                                           padding:.5rem;
+                                           background-color: rgba(255, 68, 0, 0.791);
+                                           border-radius:3px;
+                                           color:white;
+                                           border:none;
+                                           margin-bottom:.5rem;
+                                   }
+
+                           }
+                    }
+             }
+      }
+}
+
+
+
+    
+ 
+
+   
+    
+}
+
+
+@keyframes moveImage{
+       from{transform:translateX(-300px);}
+       to{transform:translateX(15px) ;}
+}
+/* @keyframes animateImg{
+       from{transform:scale(1);}
+       to{transform:scale(1.2) ;}
+} */
